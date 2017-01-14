@@ -39,6 +39,10 @@ function Set() {
 		 /*A combined list of all elements in both ListA and ListB*/
 		 /*Everybody in listA and listB with no duplicates*/
 
+		 if (listA === null || listB === null) { //Check for invalid input
+		   return null; //exit and return null to indicate and error
+	   }
+
 		 //Get the symmetric difference of SetA and setB
 		 var symAB = this.symetricDifference(listA, listB);
 		 //Append the returned elements to the resultSet
@@ -94,6 +98,10 @@ function Set() {
 	   /*-------------------------------Insert your code here -------------------------------------*/
 		 /*A list of all elements not common between listA and listB*/
 		 /*Basically the opposite of intersection*/
+
+		 if (listA === null || listB === null) { //Check for invalid input
+		   return null; //exit and return null to indicate and error
+	   }
 
 		 //abResult = relativeCompliment(setA, setB)
 		 var abResult = this.relativeCompliment(listA, listB);
